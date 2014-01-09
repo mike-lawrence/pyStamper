@@ -1,5 +1,5 @@
 class stamperClass:
-	def start(self,windowSize=(200,10),windowPosition=(0,0),windoColor=(255,255,255),doBorder=True):
+	def start(self,windowSize=(200,10),windowPosition=(0,0),windowColor=(255,255,255),doBorder=True):
 		import billiard
 		billiard.forking_enable(0)
 		self.qTo = billiard.Queue()
