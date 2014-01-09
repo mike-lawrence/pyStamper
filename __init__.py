@@ -9,7 +9,7 @@ class stamperClass:
 		return None
 	def quit(self):
 		self.qTo.put(['quit'])
-		self.process.terminate()
+		self.process.join()
 		del self.qTo
 		del self.qFrom
 		return None
